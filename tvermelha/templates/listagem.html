@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Cadastrar</h1>
+
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="data_nascimento">Data de nascimento</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <div class="senha-container">
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <!-- Mostrar senha agora logo abaixo do campo Senha -->
+                <div class="mostrar-senha">
+                    <button type="button" onclick="toggleSenha()">Mostrar Senha</button>
+                </div>
+            </div>
+            <div>
+                <label for="repetir_senha">Repetir senha</label>
+                <input type="password" id="repetir_senha" name="repetir_senha" required>
+            </div>
+        </div>
+
+        <label for="gênero">Gênero</label>
+        <select id="gênero" name="gênero" required>
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+            <option value="prefiro_não_responder">Prefiro não responder</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script>
+        function toggleSenha() {
+            const senha = document.getElementById("senha");
+            const repetirSenha = document.getElementById("repetir_senha");
+            const isPassword = senha.type === "password";
+
+            senha.type = isPassword ? "text" : "password";
+            repetirSenha.type = isPassword ? "text" : "password";
+        }
+    </script>
+
+</body>
+
+</html>
