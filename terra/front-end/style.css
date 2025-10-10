@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    margin: 20px;
+    color: #000;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #b41f3a;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #b41f3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d17b0f;
+}
+
+.senha-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.senha-container div {
+    flex: 1;
+}
+
+/* Botão "Mostrar Senha" mais compacto */
+.mostrar-senha button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+
+.logo{
+    width: auto;
+
+}
